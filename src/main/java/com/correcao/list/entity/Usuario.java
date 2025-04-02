@@ -25,7 +25,7 @@ public class Usuario { // aprendi que a entity é o primeiro package e class a s
 	@Column(unique = true) //
 	private String email;
 
-	@JsonIgnore
+	@JsonIgnore // criou um loop por algum motivo, dai isso serve pra só aparecer 1x no postman ou em qualquer outro lugar
 	@OneToMany(mappedBy = "usuario") //
 	private List<Tarefas> tarefas; // precisa definir a class como lista pra dizer que vai puxar um monte de coisa
 	

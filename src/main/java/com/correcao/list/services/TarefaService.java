@@ -37,6 +37,10 @@ public class TarefaService {
 
 		tarefas.setStatus(Status.A_FAZER);
 
+		// resolvido sem ajuda de ninguém
+		// isso tá pegando o id do usuario que já está no banco
+		// usando o jpa, com o get reference by id, dai dentro disso ai
+		// ele tá pegando o id do usuario
 		Usuario usuario = usuarioRepository.getReferenceById(dto.getId_usuario());
 
 		tarefas.setUsuario(usuario);
