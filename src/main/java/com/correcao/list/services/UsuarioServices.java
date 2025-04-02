@@ -8,6 +8,7 @@ import com.correcao.list.entity.Usuario;
 import com.correcao.list.repository.UsuarioRepository;
 
 @Service
+// tá funfando
 public class UsuarioServices { // serve pra criar os metodos pra jogar lá no controller
 	
 	@Autowired

@@ -17,7 +17,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "tb_tarefa")
-public class Tarefas {
+public class Tarefas { // funfando
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

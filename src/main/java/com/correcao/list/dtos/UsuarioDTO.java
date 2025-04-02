@@ -2,7 +2,7 @@ package com.correcao.list.dtos;
 
 import com.correcao.list.entity.Usuario;
 
-public class UsuarioDTO {
+public class UsuarioDTO { // tá funfando
 	
 	private Long id;
 	private String nome;

@@ -15,7 +15,7 @@ import com.correcao.list.repository.TarefasRepository;
 import com.correcao.list.repository.UsuarioRepository;
 
 @Service
-public class TarefaService {
+public class TarefaService { // tá funfando
 
 	@Autowired
 	TarefasRepository tarefasRepository;

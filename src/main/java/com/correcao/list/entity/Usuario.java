@@ -13,7 +13,7 @@ import jakarta.persistence.Table;
 
 
 @Entity
-@Table(name = "tb_usuario")
+@Table(name = "tb_usuario") // tá funfando
 public class Usuario { // aprendi que a entity é o primeiro package e class a ser feito
 	
 	@Id

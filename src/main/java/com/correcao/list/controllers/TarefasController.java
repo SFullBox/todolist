@@ -23,7 +23,7 @@ public class TarefasController {
 	@Autowired
 	TarefaService tarefaService;
 	
-	@PostMapping
+	@PostMapping // funciona
 	public ResponseEntity<TarefaDTO> salvar (@Valid @RequestBody TarefaDTO tarefaDTO){
 		
 		tarefaDTO = tarefaService.salvar(tarefaDTO);
@@ -32,7 +32,7 @@ public class TarefasController {
 		return ResponseEntity.ok(tarefaDTO);
 	}
 	
-	@GetMapping
+	@GetMapping // funciona
 	public ResponseEntity<List<Tarefas>> listar(){
 		
 		return ResponseEntity.ok(tarefaService.listar());

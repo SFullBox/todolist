@@ -9,7 +9,7 @@ import com.correcao.list.enums.Status;
 
 
 
-public class TarefaDTO {
+public class TarefaDTO { // tá funfando
 	
 	private Long id_usuario;
 	
