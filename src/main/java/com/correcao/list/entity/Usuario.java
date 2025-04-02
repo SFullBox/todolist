@@ -2,6 +2,7 @@ package com.correcao.list.entity;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,7 +24,8 @@ public class Usuario { // aprendi que a entity é o primeiro package e class a s
 	
 	@Column(unique = true) //
 	private String email;
-	
+
+	@JsonIgnore
 	@OneToMany(mappedBy = "usuario") //
 	private List<Tarefas> tarefas; // precisa definir a class como lista pra dizer que vai puxar um monte de coisa
 	

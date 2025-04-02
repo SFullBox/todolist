@@ -37,7 +37,7 @@ public class TarefaService {
 
 		tarefas.setStatus(Status.A_FAZER);
 
-		Usuario usuario = usuarioRepository.getReferenceById(dto.getId());
+		Usuario usuario = usuarioRepository.getReferenceById(dto.getId_usuario());
 
 		tarefas.setUsuario(usuario);
 
